@@ -19,7 +19,7 @@ Simultaneous connections to multiple peripherals are supported.
 _This plugin isn't intended for scanning beacons._ Try [cordova-plugin-ibeacon](https://github.com/petermetz/cordova-plugin-ibeacon) for iBeacons.<br/>
 If you want to create Bluetooth devices, try [cordova-plugin-ble-peripheral](https://github.com/don/cordova-plugin-ble-peripheral).
 
-See the [examples](https://github.com/don/cordova-plugin-ble-central/tree/master/examples) for ideas on how this plugin can be used.
+See the [examples](https://github.com/leoshtika/cordova-plugin-ble-central/tree/master/examples) for ideas on how this plugin can be used.
 
 ## Supported Platforms
 
@@ -55,7 +55,7 @@ For iOS, apps will crash unless they include usage description keys for the type
 
     $ cordova plugin add cordova-plugin-ble-central --variable BLUETOOTH_USAGE_DESCRIPTION="Your description here"
 
-See Apple's documentation about [Protected Resources](https://developer.apple.com/documentation/bundleresources/information_property_list/protected_resources) for more details. If your app needs other permissions like location, try the [cordova-custom-config plugin](https://github.com/don/cordova-plugin-ble-central/issues/700#issuecomment-538312656).
+See Apple's documentation about [Protected Resources](https://developer.apple.com/documentation/bundleresources/information_property_list/protected_resources) for more details. If your app needs other permissions like location, try the [cordova-custom-config plugin](https://github.com/leoshtika/cordova-plugin-ble-central/issues/700#issuecomment-538312656).
 
 It is possible to delay the initialization of the plugin on iOS. Normally the Bluetooth permission dialog is shown when the app loads for the first time. Delaying the initialization of the plugin shows the permission dialog the first time the Bluetooth API is called. Set `IOS_INIT_ON_LOAD` to false when installing.
 
@@ -1007,7 +1007,7 @@ Tests require the [Cordova Plugin Test Framework](https://github.com/apache/cord
 
 Create a new project
 
-    git clone https://github.com/don/cordova-plugin-ble-central
+    git clone https://github.com/leoshtika/cordova-plugin-ble-central
     cordova create ble-test com.example.ble.test BLETest
     cd ble-test
     cordova platform add android
